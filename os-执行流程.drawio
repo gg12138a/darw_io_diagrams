@@ -1,1 +1,66 @@
-<mxfile host="app.diagrams.net" modified="2023-02-17T04:31:18.571Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36" version="20.8.20" etag="y6H1uX9tkgI7GtLKcm87" type="github"><diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">7VhZc9MwEP41Hp5gfBQnecRp0wKhU2ihw6NiK7aI7DWynINfzyqWYzsOOYD0yDQv0a43K2m/b4/YcPrx/FKQNPoEAeWGbQZzwzk3bNuybQe/lGZRaLq9bqEIBQu0UaW4Zb+oVppam7OAZg1DCcAlS5tKH5KE+rKhI0LArGk2Bt7cNSUhbSlufcLb2nsWyEjfwu5U+ivKwqjc2XJ7xZOYlMb6JllEApjVVM6F4fQFgCxW8bxPuQpeGZf794t7Ppy4lx8+Zz/JV+/j3fW314WzwSE/WV1B0ET+X9d24XpKeK7jpe8qF2UABeRJQJUT03C8SMYclxYuf1ApFxpwkktAFQgZQQgJ4UOAVNuNIZHazFIyTYJ3CliURxz8SaEaMM71Hihp+y5KmRQwWWGnHKyAUMacjCj3iD8JlwftAweBjxJIqHIVIBn0XarDXVRab8/YagwyyIVPt9jpbJFEhHSbP7ewU+er8VQjd0khplIs0EBQTiSbNslMdE6EK7sKd1xo6A+ggdOiwZDEqcp6oFnySuJqBmKyhRsKl1nEJL1NyTJAMywnTb7UeYBX9UJOskyjuAPkw0CaUiHpfGtYy6euzu2yuGlxVlUKq0z/qFYlzswjAXHWAuI7Fs+XlPyXlHT3TMmyY+3MSU2Wkhh7p6j2dAMskTUTGI8zPNg6dVYb/j2b3rbYdA0tMu3G41nT7ZHI1DmMS9aT55L7hxbhcgyDNxK4CtUq5XkYIlnQXWI4g3btiiAe5dnudtHAWDFoQGLGVbyuKJ9SyXyyoakQzkLc99xHuKnYTB7ckiUhSm4l3S3JivX3iM2m02w2K7nebcwN3aZ7rG7TaWF6g+gV0NkmX+J7Yh3fsddA6D12y+/uU6SfdQl+8I5fVtPdLd/as0xr9phvHPw0CPT0p4DeXjPlyxhwHIbZpzYIlCes8cnL+ag9CYxykSwHAcjlyySwbRKwNzWhB50EykJYA/ULTQlDMM3hKc4B6//8z5zHngPKStGEgKuY2maRYSeGwfos5ljHwwDF6k1tUQqr993OxW8=</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2023-02-17T04:31:54.878Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36" etag="p7dpzBB3BKQ60T6ViUhG" version="20.8.20" type="github">
+  <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
+    <mxGraphModel dx="2261" dy="789" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="ONvLIebiouHm1MEydFql-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="ONvLIebiouHm1MEydFql-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="410" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ONvLIebiouHm1MEydFql-2" value="entry.asm" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="350" y="30" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ONvLIebiouHm1MEydFql-3" value="rust_main" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-211" y="150" width="1250" height="530" as="geometry" />
+        </mxCell>
+        <mxCell id="ONvLIebiouHm1MEydFql-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="ONvLIebiouHm1MEydFql-3" source="ONvLIebiouHm1MEydFql-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="211" y="90" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ONvLIebiouHm1MEydFql-5" value="clear_bss()" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="ONvLIebiouHm1MEydFql-3">
+          <mxGeometry x="40" y="60" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ONvLIebiouHm1MEydFql-6" value="mm::init()" style="swimlane;whiteSpace=wrap;html=1;rounded=1;shadow=0;swimlaneLine=1;glass=0;" vertex="1" parent="ONvLIebiouHm1MEydFql-3">
+          <mxGeometry x="210" y="60" width="920" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="ONvLIebiouHm1MEydFql-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="ONvLIebiouHm1MEydFql-6" source="ONvLIebiouHm1MEydFql-8" target="ONvLIebiouHm1MEydFql-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ONvLIebiouHm1MEydFql-8" value="heap_allocator::init_heap()" style="whiteSpace=wrap;html=1;rounded=1;shadow=0;glass=0;sketch=0;" vertex="1" parent="ONvLIebiouHm1MEydFql-6">
+          <mxGeometry x="31" y="130" width="159" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ONvLIebiouHm1MEydFql-9" value="利用.data段中的HEAP区域，创建堆分配器" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;rotation=0;rounded=0;sketch=1;curveFitting=1;jiggle=2;shadow=0;direction=east;" vertex="1" parent="ONvLIebiouHm1MEydFql-6">
+          <mxGeometry x="51" y="40" width="129" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="ONvLIebiouHm1MEydFql-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="ONvLIebiouHm1MEydFql-6" source="ONvLIebiouHm1MEydFql-11" target="ONvLIebiouHm1MEydFql-14">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="631" y="245" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ONvLIebiouHm1MEydFql-11" value="创建KERNEL_MEMORY_SPACE:&lt;br&gt;&lt;div style=&quot;color: rgb(171, 178, 191); background-color: rgb(40, 44, 52); font-family: &amp;quot;Source Code Pro&amp;quot;, monospace, &amp;quot;Fira Code&amp;quot;, Consolas, &amp;quot;Courier New&amp;quot;, monospace, &amp;quot;Droid Sans Mono&amp;quot;, &amp;quot;monospace&amp;quot;, monospace; font-size: 18px; line-height: 24px;&quot;&gt;MemorySet::&lt;span style=&quot;color: #61afef;font-weight: bold;&quot;&gt;create_for_kernel&lt;/span&gt;()&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;shadow=0;glass=0;sketch=0;" vertex="1" parent="ONvLIebiouHm1MEydFql-6">
+          <mxGeometry x="240" y="215" width="360" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ONvLIebiouHm1MEydFql-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="ONvLIebiouHm1MEydFql-6" source="ONvLIebiouHm1MEydFql-13">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="446" y="215" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ONvLIebiouHm1MEydFql-13" value="&lt;div style=&quot;color: rgb(171, 178, 191); background-color: rgb(40, 44, 52); font-family: &amp;quot;Source Code Pro&amp;quot;, monospace, &amp;quot;Fira Code&amp;quot;, Consolas, &amp;quot;Courier New&amp;quot;, monospace, &amp;quot;Droid Sans Mono&amp;quot;, &amp;quot;monospace&amp;quot;, monospace; font-size: 18px; line-height: 24px;&quot;&gt;&lt;div style=&quot;line-height: 24px;&quot;&gt;KERNEL_MEMORY_SPACE.&lt;span style=&quot;color: #61afef;font-weight: bold;&quot;&gt;activate_page&lt;/span&gt;()&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;shadow=0;glass=0;sketch=0;" vertex="1" parent="ONvLIebiouHm1MEydFql-6">
+          <mxGeometry x="321" y="145" width="410" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ONvLIebiouHm1MEydFql-14" value="&lt;div style=&quot;color: rgb(171, 178, 191); background-color: rgb(40, 44, 52); font-family: &amp;quot;Source Code Pro&amp;quot;, monospace, &amp;quot;Fira Code&amp;quot;, Consolas, &amp;quot;Courier New&amp;quot;, monospace, &amp;quot;Droid Sans Mono&amp;quot;, &amp;quot;monospace&amp;quot;, monospace; font-size: 18px; line-height: 24px;&quot;&gt;.activate_page()&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;shadow=0;glass=0;sketch=0;" vertex="1" parent="ONvLIebiouHm1MEydFql-6">
+          <mxGeometry x="651" y="215" width="199" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ONvLIebiouHm1MEydFql-15" value="1.在entry.asm建立kernel程序使用的栈&lt;br&gt;2.call rust_main" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;rotation=0;rounded=0;sketch=1;curveFitting=1;jiggle=2;shadow=0;direction=north;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="190" y="30" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ONvLIebiouHm1MEydFql-16" value="利用linker.ld定义的符号sbss和ebss" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;rotation=0;rounded=0;sketch=1;curveFitting=1;jiggle=2;shadow=0;direction=north;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-330" y="210" width="160" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
