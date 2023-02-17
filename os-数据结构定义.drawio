@@ -1,1 +1,82 @@
-<mxfile host="app.diagrams.net" modified="2023-02-17T04:12:24.685Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36" version="20.8.20" etag="Hp2bLtwOy9JXQuiW11Sz" type="github"><diagram name="第 1 页" id="mMPPsL2ghcs8QMcKAosr">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2023-02-17T04:30:00.986Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36" etag="rY6TyCUI9VPiIkxKFuhv" version="20.8.20" type="github">
+  <diagram name="第 1 页" id="mMPPsL2ghcs8QMcKAosr">
+    <mxGraphModel dx="1434" dy="789" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="6xJMPT1wmrm1_IJDG53n-1" value="MemorySet" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="1030" y="20" width="170" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="6xJMPT1wmrm1_IJDG53n-2" value="+ page_table: PageTable" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="6xJMPT1wmrm1_IJDG53n-1">
+          <mxGeometry y="26" width="170" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="6xJMPT1wmrm1_IJDG53n-4" value="+ areas: Vec&lt;MapArea&gt;&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="6xJMPT1wmrm1_IJDG53n-1">
+          <mxGeometry y="52" width="170" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="6xJMPT1wmrm1_IJDG53n-6" value="MapArea" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="560" y="180" width="280" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="6xJMPT1wmrm1_IJDG53n-7" value="+ vpn_range: VPNRange" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="6xJMPT1wmrm1_IJDG53n-6">
+          <mxGeometry y="26" width="280" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="6xJMPT1wmrm1_IJDG53n-8" value="+ frames_map: BTreeMap&lt;VPN, FrameTracker&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="6xJMPT1wmrm1_IJDG53n-6">
+          <mxGeometry y="52" width="280" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="6xJMPT1wmrm1_IJDG53n-9" value="+ map_type: MapType" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="6xJMPT1wmrm1_IJDG53n-6">
+          <mxGeometry y="78" width="280" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="6xJMPT1wmrm1_IJDG53n-11" value="+ map_perm: MapPermission" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="6xJMPT1wmrm1_IJDG53n-6">
+          <mxGeometry y="104" width="280" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="6xJMPT1wmrm1_IJDG53n-13" value="FrameTracker" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="460" y="410" width="140" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="6xJMPT1wmrm1_IJDG53n-14" value="+ ppn: PPN" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="6xJMPT1wmrm1_IJDG53n-13">
+          <mxGeometry y="26" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="6xJMPT1wmrm1_IJDG53n-21" value="&lt;div style=&quot;color: rgb(171, 178, 191); background-color: rgb(40, 44, 52); font-family: &amp;quot;Source Code Pro&amp;quot;, monospace, &amp;quot;Fira Code&amp;quot;, Consolas, &amp;quot;Courier New&amp;quot;, monospace, &amp;quot;Droid Sans Mono&amp;quot;, &amp;quot;monospace&amp;quot;, monospace; font-size: 18px; line-height: 24px;&quot;&gt;type &lt;span style=&quot;color: #e5c07b;&quot;&gt;VPNRange&lt;/span&gt; &lt;span style=&quot;color: #56b6c2;&quot;&gt;=&lt;/span&gt; &lt;span style=&quot;color: #e5c07b;&quot;&gt;SimpleRange&lt;/span&gt;&amp;lt;&lt;span style=&quot;color: #e5c07b;&quot;&gt;VirtPageNum&lt;/span&gt;&amp;gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="10" y="406" width="420" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6xJMPT1wmrm1_IJDG53n-22" value="&lt;div style=&quot;color: rgb(171, 178, 191); background-color: rgb(40, 44, 52); font-family: &amp;quot;Source Code Pro&amp;quot;, monospace, &amp;quot;Fira Code&amp;quot;, Consolas, &amp;quot;Courier New&amp;quot;, monospace, &amp;quot;Droid Sans Mono&amp;quot;, &amp;quot;monospace&amp;quot;, monospace; font-size: 18px; line-height: 24px;&quot;&gt;&lt;div&gt;    pub &lt;span style=&quot;color: #c678dd;&quot;&gt;struct&lt;/span&gt; &lt;span style=&quot;color: #e5c07b;&quot;&gt;MapPermission&lt;/span&gt;: &lt;span style=&quot;color: #e5c07b;&quot;&gt;u8&lt;/span&gt; {&lt;/div&gt;&lt;div&gt;        &lt;span style=&quot;color: #c678dd;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;const&lt;/span&gt; &lt;span style=&quot;color: #d19a66;&quot;&gt;R&lt;/span&gt; &lt;span style=&quot;color: #56b6c2;&quot;&gt;=&lt;/span&gt; &lt;span style=&quot;color: #d19a66;&quot;&gt;1&lt;/span&gt; &lt;span style=&quot;color: #56b6c2;&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span style=&quot;color: #d19a66;&quot;&gt;1&lt;/span&gt;;&lt;/div&gt;&lt;div&gt;        &lt;span style=&quot;color: #c678dd;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;const&lt;/span&gt; &lt;span style=&quot;color: #d19a66;&quot;&gt;W&lt;/span&gt; &lt;span style=&quot;color: #56b6c2;&quot;&gt;=&lt;/span&gt; &lt;span style=&quot;color: #d19a66;&quot;&gt;1&lt;/span&gt; &lt;span style=&quot;color: #56b6c2;&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span style=&quot;color: #d19a66;&quot;&gt;2&lt;/span&gt;;&lt;/div&gt;&lt;div&gt;        &lt;span style=&quot;color: #c678dd;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;const&lt;/span&gt; &lt;span style=&quot;color: #d19a66;&quot;&gt;X&lt;/span&gt; &lt;span style=&quot;color: #56b6c2;&quot;&gt;=&lt;/span&gt; &lt;span style=&quot;color: #d19a66;&quot;&gt;1&lt;/span&gt; &lt;span style=&quot;color: #56b6c2;&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span style=&quot;color: #d19a66;&quot;&gt;3&lt;/span&gt;;&lt;/div&gt;&lt;div&gt;        &lt;span style=&quot;color: #c678dd;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;const&lt;/span&gt; &lt;span style=&quot;color: #d19a66;&quot;&gt;U&lt;/span&gt; &lt;span style=&quot;color: #56b6c2;&quot;&gt;=&lt;/span&gt; &lt;span style=&quot;color: #d19a66;&quot;&gt;1&lt;/span&gt; &lt;span style=&quot;color: #56b6c2;&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span style=&quot;color: #d19a66;&quot;&gt;4&lt;/span&gt;;&lt;/div&gt;&lt;div&gt;    }&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="640" y="406" width="330" height="154" as="geometry" />
+        </mxCell>
+        <mxCell id="6xJMPT1wmrm1_IJDG53n-23" value="&lt;div style=&quot;color: rgb(171, 178, 191); background-color: rgb(40, 44, 52); font-family: &amp;quot;Source Code Pro&amp;quot;, monospace, &amp;quot;Fira Code&amp;quot;, Consolas, &amp;quot;Courier New&amp;quot;, monospace, &amp;quot;Droid Sans Mono&amp;quot;, &amp;quot;monospace&amp;quot;, monospace; font-weight: normal; font-size: 18px; line-height: 24px;&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: #c678dd;&quot;&gt;pub&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #c678dd;&quot;&gt;enum&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #e5c07b;&quot;&gt;MapType&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt; {&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot;color: #e5c07b;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;Identical&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt;,&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot;color: #e5c07b;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;Framed&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt;,&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt;}&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="1020" y="406" width="210" height="114" as="geometry" />
+        </mxCell>
+        <mxCell id="6xJMPT1wmrm1_IJDG53n-24" value="PageTable" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="1370" y="180" width="180" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="6xJMPT1wmrm1_IJDG53n-25" value="+ root_ppn: PPN" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="6xJMPT1wmrm1_IJDG53n-24">
+          <mxGeometry y="26" width="180" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="6xJMPT1wmrm1_IJDG53n-26" value="+ frames: Vec&lt;FrameTracker&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="6xJMPT1wmrm1_IJDG53n-24">
+          <mxGeometry y="52" width="180" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="6xJMPT1wmrm1_IJDG53n-28" value="" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="6xJMPT1wmrm1_IJDG53n-23">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1040" y="380" as="sourcePoint" />
+            <mxPoint x="710" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6xJMPT1wmrm1_IJDG53n-29" value="" style="endArrow=none;html=1;rounded=0;entryX=0.506;entryY=1.115;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="6xJMPT1wmrm1_IJDG53n-6" target="6xJMPT1wmrm1_IJDG53n-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="740" y="260" as="sourcePoint" />
+            <mxPoint x="790" y="210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6xJMPT1wmrm1_IJDG53n-31" value="" style="endArrow=none;html=1;rounded=0;exitX=0.535;exitY=1.115;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="6xJMPT1wmrm1_IJDG53n-4" target="6xJMPT1wmrm1_IJDG53n-24">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="710" y="190" as="sourcePoint" />
+            <mxPoint x="1150" y="180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6xJMPT1wmrm1_IJDG53n-32" value="" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="6xJMPT1wmrm1_IJDG53n-21">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="260" y="400" as="sourcePoint" />
+            <mxPoint x="710" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
